@@ -14,6 +14,7 @@ ENABLE_PGO=true
 BUILD_DIR="build"
 RESULTS_DIR="results"
 ANALYSIS_DIR="analysis"
+FIGUERS_DIR="reports/figures"
 REPORTS_DIR="reports"
 
 # 源代码目录

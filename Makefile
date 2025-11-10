@@ -9,6 +9,7 @@ BUILD_DIR := $(PROJECT_ROOT)/build
 RESULTS_DIR := $(PROJECT_ROOT)/results
 ANALYSIS_DIR := $(PROJECT_ROOT)/analysis
 REPORTS_DIR := $(PROJECT_ROOT)/reports
+FIGURES_DIR := $(PROJECT_ROOT)/reports/figures
 
 # Python解释器
 PYTHON := python3
@@ -61,7 +62,7 @@ all: test analyze visualize
 	@echo "  - 编译输出: $(BUILD_DIR)/"
 	@echo "  - 测试结果: $(RESULTS_DIR)/"
 	@echo "  - 分析结果: $(ANALYSIS_DIR)/"
-	@echo "  - 图表报告: $(REPORTS_DIR)/figures/"
+	@echo "  - 图表报告: $(FIGURES_DIR)/"
 	@echo ""
 
 # test目标：运行编译测试脚本
@@ -154,13 +155,13 @@ clean-analysis:
 
 # clean-figures目标：仅删除图表
 .PHONY: clean-figures
-clean-reports:
+clean-figures:
 	@echo "$(COLOR_BOLD)$(COLOR_YELLOW)>>> 清理图表...$(COLOR_RESET)"
-	@if [ -d "$(REPORTS_DIR)/figures" ]; then \
-		rm -rf $(REPORTS_DIR)/figures; \
-		echo "  - 删除目录: $(REPORTS_DIR)/figures/"; \
+	@if [ -d "$(FIGURES_DIR)" ]; then \
+		rm -rf $(FIGURES_DIR); \
+		echo "  - 删除目录: $(FIGURES_DIR)/"; \
 	else \
-		echo "  - 目录不存在: $(REPORTS_DIR)/figures"; \
+		echo "  - 目录不存在: $(FIGURES_DIR)/"; \
 	fi
 
 # 检查依赖
