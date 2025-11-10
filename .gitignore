@@ -1,0 +1,49 @@
+# 编译输出
+build/
+*.o
+*.out
+*.exe
+
+# 测量数据和分析结果
+results/
+analysis/
+
+# 报告和图表
+reports/figures/
+reports/*.pdf
+reports/*.tex
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE和编辑器
+.vscode/
+.idea/
+.kiro/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志文件
+*.log
+
+# PGO生成的profile数据
+*.gcda
+*.gcno
+*.profdata
+*.profraw
+
+# 临时文件
+*.tmp
+*.bak

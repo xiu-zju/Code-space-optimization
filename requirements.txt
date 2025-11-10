@@ -1,0 +1,24 @@
+# Python依赖包列表
+# 代码空间优化研究系统
+
+# 安装说明:
+# 使用以下命令安装所有依赖:
+#   pip3 install -r requirements.txt
+#
+# 或者使用以下命令安装到用户目录（无需sudo权限）:
+#   pip3 install --user -r requirements.txt
+
+# 数据处理和分析
+pandas>=1.3.0
+
+# 数值计算
+numpy>=1.21.0
+
+# 数据可视化
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# 可选依赖（用于增强功能）
+# scipy>=1.7.0          # 科学计算（如需要高级统计分析）
+# plotly>=5.0.0         # 交互式图表（如需要Web可视化）
+# jupyter>=1.0.0        # Jupyter Notebook支持（如需要交互式分析）
